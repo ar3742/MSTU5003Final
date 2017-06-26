@@ -1,0 +1,19 @@
+/* Styles go here */
+
+body {
+  background-color: #F0F8FF;
+}
+
+h1{
+  font-family: Chelsea Market;
+  color: #00008B;
+  font-size: 35px;
+  text-align: center;
+}
+
+h2, h3, h4, h5{
+  font-family: Coming Soon;
+  color: #DC143C;
+  font-size: 20px;
+}
+
