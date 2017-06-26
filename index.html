@@ -6,154 +6,77 @@
   <script src="script.js"></script>
 </head>
 
+<body>
+<h1>Which Dr. Seuss Character are you most like?</h1>
+
+<h2> 1. What is your favorite color?</h2>
+  <input type="radio" name="q0" value="pink" id="ans1a" onclick="userAlert()"> Pink
+  <br>
+  <input type="radio" name="q0" value="orange" id="ans1b" onclick="userAlert()"> Orange
+  <br>
+  <input type="radio" name="q0" value="green" id="ans1c" onclick="userAlert()"> Green
+  <br>
+  <input type="radio" name="q0" value="blue" id="ans1d" onclick="userAlert()"> Blue
+  <br>
+  <input type="radio" name="q0" value="yellow" id="ans1e" onclick="userAlert()"> Yellow
+  <br>
+
+<h3> 2. What do you like to eat for breakfast?</h3>
+  <input type="radio" name="q1" value="cereal" id="ans2a" onclick="userAlert()"> Cereal
+  <br>
+  <input type="radio" name="q1" value="eggs-&-bacon" id="ans2b" onclick="userAlert()"> Eggs & Bacon
+  <br>
+  <input type="radio" name="q1" value="pancakes" id="ans2c" onclick="userAlert()"> Pancakes
+  <br>
+  <input type="radio" name="q1" value="waffles" id="ans2d" onclick="userAlert()"> Waffles
+  <br>
+  <input type="radio" name="q1" value="ice-cream-sundaes" id="ans2e" onclick="userAlert()"> Ice Cream Sundaes
+  <br>
+
+<h4> 3. What superpower would you like to have?</h4>
+ <input type="radio" name="q2" value="super-speed" id="ans3a" onclick="userAlert()"> Super Speed
+  <br>
+  <input type="radio" name="q2" value="invisibility" id="ans3b" onclick="userAlert()"> Invisibility
+  <br>
+  <input type="radio" name="q2" value="flexibility" id="ans3c" onclick="userAlert()"> Flexibility 
+  <br>
+  <input type="radio" name="q2" value="telepathy" id="ans3d" onclick="userAlert()"> Telepathy
+  <br>
+  <input type="radio" name="q2" value="teleportation" id="ans3e" onclick="userAlert()"> Teleportation
+  <br>
+
+<h5> 4. What is your favorite Dr. Seuss book?</h5>
+ <input type="radio" name="q3" value="Green-eggs-&-ham" id="ans4a" onclick="userAlert()"> Green Eggs & Ham
+  <br>
+  <input type="radio" name="q3" value="Cat-in-the-Hat" id="ans4b" onclick="userAlert()"> Cat in the Hat
+  <br>
+  <input type="radio" name="q3" value="The-Lorax" id="ans4c" onclick="userAlert()"> The Lorax 
+  <br>
+  <input type="radio" name="q3" value="Oh-The-Places-You'll-Go" id="ans4d" onclick="userAlert()"> Oh The Places You'll Go
+  <br>
+  <input type="radio" name="q3" value="Other" id="ans4e" onclick="userAlert()"> Other
+  <br>
+
+<!--results button-->
+<center>
+    <div>
+      <button value= "Change the image source" onclick="changeImage()">Get My Results</button>
+    </div>
+</center>
+<center>
+    <img id="whitespace" class="larger-image" src="http://www.solidbackgrounds.com/images/2560x1440/2560x1440-white-solid-color-background.jpg"></center>
+
+
+
 <!--whole page and google fonts imported-->
 <link href="https://fonts.googleapis.com/css?family=Handlee" rel="stylesheet" type="text/css">
 <link href="https://fonts.googleapis.com/css?family=Caveat+Brush|Handlee" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Chelsea+Market" rel="stylesheet">
 
-<!--top nav bar will include link to teacher page-->
-
-<ul>
-  <li>
-    <a href="#">Home</a>
-  </li>
-  <li>
-    <a href="#">Life of Seuss</a>
-  </li>
-  <li>
-    <a href="#">Books by Seuss</a>
-  </li>
-  <li>
-    <a href="http://embed.plnkr.co/EitXaN1TH1x7rYRVzxiR/">Teacher's Guide</a>
-  </li>
-</ul>
-
-
-<!--heading of site-->
-
-<body background>
-  <h1>Oh The Places You'll Go...<br>
-  When You Write Like Dr. Seuss</h1>
-  <h2>
-  Dr. Seuss is one of the most famous children's book authors of all time! His catchy rhymes capture the minds of young readers, but did you know he has a secret behind some of his books? 
-  </h2>
-
-  <h3>You know this story!<br> 
-  It was written using only 50 sight words.<br> 
-  All words that first graders know!<br></h3>
-  <center><img class="smaller-image thick-green-border" src="https://upload.wikimedia.org/wikipedia/en/1/11/Green_Eggs_and_Ham.jpg"></center>
-
-  <!--chart of Dr. Seuss words, will be moveable, only showing example w/ 10 words right now but will include all 50 for students to manipulate-->
-  <p>
-    Your challenge is to create a story using the 50 words below!
-    <br> Click on the words you want to use and they will change to green.
-  </p>
-
-  <ol1>
-    <li class="word1">
-      <a href="word1" onClick="return changecolor(this)" style="color: orange;">am</a>
-    </li>
-    <br>
-    <li class="word2"></li>
-    <li class="word3"></li>
-    <li>are</li>
-    <li>be</li>
-    <li>boat</li>
-    <li>box</li>
-    <li>car</li>
-    <li>could</li>
-    <li>dark</li>
-    <li>do</li>
-  </ol1>
-
-  <!--box for illustration of story-->
-  <p>
-    Then choose an illustration!
-  </p>
-  <center>
-    <div>
-      <button value= "Change the image source" onclick="changeImage()">Change Illustration</button>
-    </div>
-    <!--<button class="btn btn-block"><i class="fa fa-thumbs-up"></i> Change Illustration </button>-->
-  </center>
-  <center>
-    <img id="whitespace" class="larger-image" src="http://www.solidbackgrounds.com/images/2560x1440/2560x1440-white-solid-color-background.jpg"></center>
-  <!--hidden <img id="greeneggs" class="larger-image" src="http://images.clipartpanda.com/green-eggs-and-ham-clip-art-suess.jpg">-->
-  <center>
-    <form action="/title for story">
-      <input type="text" placeholder="Title of Your Story" required>
-      <br>
-
-<center>
-<div class="btn-group">
-        <button class="btn btn-default" onclick="javascript:return ShowMessage();">Save & Submit</button>
-      </div>
-</center>
-
-      <!-- <button class="btn btn-block"><onclick= "myFunction()"> Submit</button>-->
-
-      <br>
-      I found this project to be...<br>
-      <label>
-        <input type="radio" name="radio1" id="hardbtn"> 
-        <label for="hardbtn"> Hard </label>
-        <div class="reveal-if-active">
-         Practice makes perfect! Let's keep trying. 
-        </div>
-        
-      <label>
-        <input type="radio" name="radio1" id="justrightbtn"> 
-      <label for="justrightbtn"> Just Right </label>
-      <div class="reveal-if-active">
-        Great! You're on the right track!
-      </div>
-      
-      <label>
-      <input type="radio" name="radio1" id="easybtn"> 
-      <label for="easybtn"> Easy</label>
-      <div class="reveal-if-active">
-        You're a pro. Restart and create another story!
-      </div>
-    </form>
-  </center>
-<h5>
-  <center> Want to know which Dr. Seuss Character you are most like? <br> <br>
-  <a
-href="https://ar3742.github.io/FinalProj/">Take The Quiz </a>
-  </center></h5>
 
 
 
 
-
-
-  <!--countdown to RAA day, will (hopefully) become interactive
-
-  <h4> 
-  Countdown to Read Across America Day 2018
-<div class="container">      
-  <center><table class="table table-bordered">
-    <thead>
-      <tr>
-        <th>Days</th>
-        <th>Hours</th>
-        <th>Minutes</th>
-        <th>Seconds</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>271</td>
-        <td>3</td>
-        <td>8</td>
-        <td>13</td>
-      </tr>
-      </tbody>
-  </table>
-  </center>
-</div>
-</h4> -->
 </body>
-
 
 </html>
