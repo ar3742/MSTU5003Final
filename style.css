@@ -1,19 +1,115 @@
 /* Styles go here */
+ul {
+  list-style-type: none;
+  font-family: Handlee;
+  letter-spacing: 3px;
+  background-image: url(http://studiocollection.co.za/resources/cat-in-the-hat-stripe-turquoise.jpg);
+  text-align: center;
+  padding: 50px;
+  margin: 0;
+}
+
+ul li {
+  display: inline
+}
+
+a {
+  border: 3px solid black;
+  border-collapse: collapse;
+  padding: 6px;
+  background-color: white;
+  width: 25%;
+  
+}
 
 body {
   background-color: #F0F8FF;
 }
 
-h1{
-  font-family: Chelsea Market;
+h1 {
+  font-family: Caveat Brush;
+  font-size: 50px;
+  text-align: center;
   color: #00008B;
-  font-size: 35px;
+}
+
+h2 {
+  font-family: Handlee;
+  font-size: 20px;
   text-align: center;
 }
 
-h2, h3, h4, h5{
-  font-family: Coming Soon;
-  color: #DC143C;
+h3 {
+  font-family: Handlee;
   font-size: 20px;
+  text-align: center;
+  color: #DC143C;
 }
 
+p {
+  font-family: Handlee;
+  font-size: 20px;
+  text-align: center;
+}
+
+.thick-green-border {
+  border-color: green;
+  border-width: 10px;
+  border-style: solid;
+}
+
+.smaller-image {
+  width: 200px;
+  border-radius: 10px;
+  align: center;
+}
+
+.larger-image {
+  width: 500px;
+  border-radius: 10px;
+  align: center;
+}
+
+ol1 {
+  list-style-type: none;
+  font-family: Handlee;
+  font-size: 20px;
+  letter-spacing: 3px;
+  text-align: center;
+}
+
+h4{
+  font-family: Chelsea Market;
+  color: #00008B;
+  text-align: center;
+  border: 3px solid;
+  border-color: #DC143C;
+  padding: 6px;
+  background-color: white;
+}
+form {
+  font-family: Coming Soon;
+}
+
+.reveal-if-active {
+  opacity: 0;
+  max-height: 0;
+  overflow: hidden;
+}
+input[type="radio"]:checked ~ .reveal-if-active,
+input[type="checkbox"]:checked ~ .reveal-if-active {
+  opacity: 1;
+  max-height: 100px; 
+  overflow: visible;
+}
+
+h5{
+  font-family: Chelsea Market;
+  color: #00008B;
+  font-size: 20px;
+}
+h6{
+  font-family: Handlee;
+  color: #DC143C;
+  font-size: 25px;
+}
